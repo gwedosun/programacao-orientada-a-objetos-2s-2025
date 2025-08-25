@@ -1,3 +1,4 @@
+package olaMundo;
 class olaMundo {
 
 	public static void main(String[] args){
