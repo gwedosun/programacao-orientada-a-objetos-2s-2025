@@ -11,6 +11,12 @@ public class Radar {
         System.out.println("Placa" + Placa);
     }
 
+    public Radar(String ModeloRadar, Integer LimiteVelocidade, String Localizacao){
+        this.ModeloRadar = ModeloRadar;
+        this.LimiteVelocidade = LimiteVelocidade;
+        this.Localizacao = Localizacao;
+    }
+
     public void avaliarVelocidade(Carro c){
         if(c.Velocidade > this.LimiteVelocidade){
             emitirNotificacao(c.Placa, c.Velocidade);

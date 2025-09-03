@@ -13,7 +13,7 @@ public class Simulacao {
         Opala.Ano = 1976;
 
 
-        Radar Radar = new Radar();
+        Radar Radar = new Radar("pardal", 60, "Pistao Sul");
         Radar.ModeloRadar = "pardal";
         Radar.LimiteVelocidade = 60;
         Radar.Localizacao = "Pistao Sul";
