@@ -2,7 +2,7 @@ package SistemaRadar;
 
 public class Radar {
     public Integer LimiteVelocidade;
-    public Integer ModeloRadar;
+    public String ModeloRadar;
     public String Localizacao;
 
     public void emitirNotificacao(String Placa, Integer VelocidadeAvaliada){

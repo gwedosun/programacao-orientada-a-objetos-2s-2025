@@ -6,6 +6,13 @@ public class Carro {
     public String Placa; // Alterado de Integer para String
     public Integer Velocidade;
 
+    public Carro(String Placa, Integer Velocidade, Integer Ano, String Modelo){
+        this.Placa = Placa;
+        this.Velocidade = Velocidade;
+        this.Ano = Ano;
+        this.Modelo = Modelo;
+    }
+
     public void Acelerar(){
         this.Velocidade += 5;
     }
