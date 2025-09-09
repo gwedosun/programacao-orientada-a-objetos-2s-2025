@@ -7,7 +7,7 @@ public class Simulacao {
 
     public static void main(String[] args){
         Carro Opala = new Carro("ACLR300", 0, 1976, "Comodoro");
-        Opala.Velocidade = 0;
+        Opala.getVelocidade();
         Opala.Placa = "ACLR300"; 
         Opala.Modelo = "Comodoro";
         Opala.Ano = 1976;
@@ -23,19 +23,17 @@ public class Simulacao {
         Opala.Acelerar();
         Opala.Acelerar();
         Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
-        Opala.Acelerar();
+
 
         Radar.avaliarVelocidade(Opala);
         Opala.Acelerar();
         Radar.avaliarVelocidade(Opala);
         Opala.Acelerar();
         Radar.avaliarVelocidade(Opala);
+        Opala.Acelerar();
+        Radar.avaliarVelocidade(Opala);
+        Opala.setVelocidade(-60);
+        Radar.avaliarVelocidade(Opala);
+
     }
 }

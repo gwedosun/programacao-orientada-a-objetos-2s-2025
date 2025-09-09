@@ -18,8 +18,10 @@ public class Radar {
     }
 
     public void avaliarVelocidade(Carro c){
-        if(c.Velocidade > this.LimiteVelocidade){
-            emitirNotificacao(c.Placa, c.Velocidade);
+        if(c.getVelocidade() > this.LimiteVelocidade){
+            emitirNotificacao(c.Placa, c.getVelocidade());
         }
     }
 }
+
+// trocar todos os atributos de public para private;
