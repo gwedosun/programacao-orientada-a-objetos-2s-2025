@@ -1,8 +1,11 @@
 package SistemaIPTU;
 
-public class Chacara {
+public class Chacara extends Imovel {
 
-    public Chacara(Boolean possuiPocoArtesiano) {
+    private Boolean possuiPocoArtesiano;
+
+    public Chacara(Municipio municipio, Double areaM2, Integer vagas, Boolean possuiPocoArtesiano){
+        super(municipio, areaM2, vagas);
         this.possuiPocoArtesiano = possuiPocoArtesiano;
     }
 
@@ -17,6 +20,4 @@ public class Chacara {
     public void setPossuiPocoArtesiano(Boolean possuiPocoArtesiano) {
         this.possuiPocoArtesiano = possuiPocoArtesiano;
     }
-    private Boolean possuiPocoArtesiano;
-
 }
