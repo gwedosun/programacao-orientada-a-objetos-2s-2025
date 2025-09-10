@@ -8,10 +8,6 @@ public class Imovel {
         this.vagas = vagas;
     }
 
-    public Imovel(){
-        
-    }
-
     public Municipio getMunicipio() {
         return this.municipio;
     }
